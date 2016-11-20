@@ -1,0 +1,54 @@
+body {
+  margin-top: 10%;
+  margin-left: 40%;
+}
+
+
+h5 {
+  font-family: helvetica;
+  color: #232a2a;
+  margin: 0;
+}
+
+
+.title{
+  animation-name: fade;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+.repete {
+  height: 40px;
+  width: 40px;
+}
+
+#repete1 {
+  animation-name: pace;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+
+
+@keyframes pace {
+  0% {transform:  translate(-20px,0px)  rotate(0deg) scaleX(-1.00);}
+  10% {transform: translate(30px,0px) rotate(-15deg) scaleX(1.00);}
+  20% {transform: translate(60px,0px) rotate(15deg) scaleX(1.00);}
+  30% {transform: translate(90px,0px) rotate(-10deg) scaleX(1.00);}
+  40% {transform: translate(120px,0px) rotate(20deg) scaleX(1.00);}
+  50% {transform: translate(160px,0px) rotate(-10deg) scaleX(1.00);}
+  60% {transform: translate(120px,0px) rotate(15deg) scaleX(-1.00);}
+  70% {transform: translate(90px,0px) rotate(-15deg) scaleX(-1.00);}
+  80% {transform: translate(60px,0px) rotate(5deg) scaleX(-1.00);}
+  90% {transform: translate(30px,0px) rotate(-15deg) scaleX(-1.00);}
+  100% {transform: translate(0px,0px) rotate(0deg) scaleX(-1.00);}
+}
+
+@keyframes fade {
+  0% {opacity: 0.1;}
+ 50% {opacity: 30;}
+ 100% {opacity: 0.1;}
+}
